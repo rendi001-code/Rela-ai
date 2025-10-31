@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web AI Chat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="registerForm">
+            <h1>Daftar</h1>
+            <label for="registerEmail">Email/Nomor HP:</label>
+            <input type="text" id="registerEmail" name="registerEmail">
+            <button id="registerButton">Daftar</button>
+            <p id="registerError" class="error-message"></p>
+        </div>
+
+        <div id="chatContainer" style="display: none;">
+            <h1>Chat dengan AI</h1>
+            <div id="chatLog" class="chat-log">
+                <!-- Pesan akan ditampilkan di sini -->
+            </div>
+            <div class="chat-input">
+                <input type="text" id="messageInput" placeholder="Ketik pesan Anda...">
+                <button id="sendButton">Kirim</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
